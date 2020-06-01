@@ -36,6 +36,7 @@ header {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment:fixed;
 }
 
 .hero-text-box {
@@ -181,7 +182,17 @@ h2:after {
     display: block;
     margin-bottom: 10px;
 }
-
+.icon-small {
+    display: inline-block;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /* Secret to align icons and text*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
 .pfix{
     margin-left: 10px;
 }
@@ -321,15 +332,103 @@ h2:after {
     margin-top: 5%;
 }
 
-.location-feature-text i {
-    display: inline-block;
-    text-align: center;
-    font-size: 120%;
-    margin-right: 10px;
-    
-    /* Secret to align icons and text*/
-    line-height: 120%;
-    vertical-align: middle;
-    margin-top: -4px;
+/*-----------------------------------------------------------------------------------------*/
+/* Reviews Section*/
+/*-----------------------------------------------------------------------------------------*/
+.reviews-section{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(image/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
 }
 
+.reviews-section h2{
+    color: #fff;
+}
+
+blockquote{
+    padding: 3%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 40px;
+    position: relative;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: -5px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Reviews Section*/
+/*-----------------------------------------------------------------------------------------*/
+
+.plan-section{
+    background-color: #e8e8e8;
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow:3px 3px 15px #9a9494;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #efefef;
+}
+
+.plan-price{
+    font-size: 300%;
+    font-weight: ;
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+
+.plan-price span{
+    font-size: 30%
+}
+
+.meal-price{
+    font-size: 80%;
+}
+.plan-box li{
+    list-style: none;
+    margin:15px 0;
+}
+
+.plan-box li i {
+    margin:0 10px;
+    color: #e67e22;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.plan-box div:first-child{
+    background-color: #f7f7f7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
