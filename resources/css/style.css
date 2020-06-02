@@ -94,7 +94,7 @@ section {
 }
 
 .row {
-    width: 80vw;
+    max-width: 80vw;
     margin: 0 auto;
 }
 
@@ -200,7 +200,8 @@ h2:after {
 /*Buttons------------------------------------------------------------------------------------*/
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     text-decoration: none;
@@ -210,11 +211,14 @@ h2:after {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
     background-color: #cf6d17;
 }
 
-.btn-full {
+.btn-full,
+input[type=submit]{
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -399,13 +403,14 @@ cite img{
 
 .plan-price{
     font-size: 300%;
-    font-weight: ;
+    font-weight: 100;
     margin-bottom: 10px;
     color: #e67e22;
 }
 
 .plan-price span{
-    font-size: 30%
+    font-size: 30%;
+    font-weight: 300;
 }
 
 .meal-price{
@@ -431,4 +436,34 @@ cite img{
     background-color: #f7f7f7;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Form Section*/
+/*-----------------------------------------------------------------------------------------*/
+.form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width:100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline: none;
 }
