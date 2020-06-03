@@ -467,3 +467,35 @@ input[type=checkbox]{
 *:focus{
     outline: none;
 }
+
+.btn-submit{
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Footer Section*/
+/*-----------------------------------------------------------------------------------------*/
+footer{
+    background-color: #793c3c;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+footer li{
+    display: inline-block;
+    padding: 2px;
+    margin: 2px 2px;
+}
+
+footer{
+    color: crimson;
+}
+
+
