@@ -1,5 +1,5 @@
-@media only screen and (min-width:1200px) {
-    
+@media only screen and (max-width:1312px) {
+
     .hero-text-box {
         width: 100%;
         padding: 0 2%;
@@ -9,6 +9,16 @@
         padding: 0 2%;
     }
 
+    .app-in-phone {
+        width: 55%;
+    }
+
+    .location-feature-text {
+        font-size: 80%;
+    }
+    .plan-section {
+        font-size: 70%;
+    }
 }
 
 @media only screen and (max-width:992px) {
@@ -36,14 +46,14 @@
     .work-steps:last-of-type {
         margin-bottom: 60px;
     }
+
+    .app-in-phone {
+        width: 55%;
+    }
     
-    .app-in-phone{
-        width: 50%;
+    .location-feature-text {
+        font-size: 60%;
     }
 }
 
-@media only screen and (min-width:768px) {}
-
-@media only screen and (min-width:600px) {}
-
-@media only screen and (max-width:600px) {}
+@media only screen and (max-width:688px) {}
